@@ -10,6 +10,8 @@ List of currently supported functions:
 
 **This is still an experiment 🧪 ⚡**
 
+**Demo**: https://xtl-wasm.now.sh/
+
 ## Installation
 
 This package has not been published yet.
