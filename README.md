@@ -54,3 +54,8 @@ yarn run start
 ```
 
 This will open a new tab in the web browser with the demo app.
+
+## References
+
+- `xtl`, the x template library: https://github.com/xtensor-stack/xtl
+- Emscripten: https://emscripten.org/
