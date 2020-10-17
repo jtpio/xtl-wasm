@@ -1,0 +1,59 @@
+{
+  "name": "xtl-wasm",
+  "version": "0.1.0",
+  "description": "XTL port to WebAssembly",
+  "main": "lib/xtl.js",
+  "types": "./xtl.d.ts",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtpio/xtl-wasm.git"
+  },
+  "keywords": [
+    "xtl",
+    "wasm"
+  ],
+  "files": [
+    "lib/**/*.d.ts",
+    "lib/**/*.js.map",
+    "lib/**/*.js",
+    "lib/**/*.wasm"
+  ],
+  "author": "QuantStack",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jtpio/xtl-wasm/issues"
+  },
+  "scripts": {
+    "build:xtl": "mkdir -p public/dist && em++ ./main.cpp -Oz --bind -s MODULARIZE=1 -s EXPORT_NAME=createModule --bind -std=c++11 -o public/dist/index.js",
+    "clean": "rimraf lib/",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
+    "typescript": "~4.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
