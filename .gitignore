@@ -1,7 +1,6 @@
 # JavaScript files
 node_modules
 lib
-*.wasm
 
 # Emscripten
 emsdk
