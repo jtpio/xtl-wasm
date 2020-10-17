@@ -34,10 +34,16 @@ source ./emsk_env.sh
 
 export CPLUS_INCLUDE_PATH=${CONDA_PREFIX}/include
 
-yarn run build
+yarn run build:xtl
 ```
 
 This will generate the WASM and JS files in the `public/dist/` folder.
+
+To build the demo web app:
+
+```bash
+yarn run build
+```
 
 Then start a local server with:
 
